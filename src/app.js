@@ -102,7 +102,7 @@ socketServer.on("connection", async (socket) => {
 
         socket.on('eliminar', async (id) => {
             try {
-                const products = await Manager.deleteOne(id);
+                const products = await productsManager.deleteOne(id);
                 const productosActualizados = await productsManager.findAll();
                 socketServer.emit('productosActualizados', productosActualizados);
             } catch (error) {

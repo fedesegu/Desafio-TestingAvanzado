@@ -42,5 +42,10 @@
     "sweetalert2": "^11.10.4",
     "tailwindcss": "^3.4.1",
     "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "chain": "^0.4.0",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.4"
   }
 }
